@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leke Tech Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav_container">
+            <h2 class="logo">HITBAMAS HIGHER INSTITUTE OF TECHNOLOGY</h2>
+                <div class="menu">
+                    <h2 >Home</h2>
+                    <h2 >About</h2>
+                    <h2 >Contact</h2>
+                    <h2 >Gallery</h2>
+                    <h2 >Program
+                        <div class="dropdown">
+                            <span class="icon">&#10507;</span>
+                            <div class="dropdown-content">
+                                <a href="#">SWE</a>
+                                <a href="#">EPS</a>
+                                <a href="#">PRM</a>
+                            </div>
+                         </div>
+                    </h2>
+                     
+                </div>
+        </div>
+       </nav>
+<main>
+    <div class="container">
+        <h1>To-do List</h1>
+        <input type="text" id="todoInput" placeholder="Add new todo">
+        <button onclick="addTodo()">Add</button>
+        <ul id="todoList"></ul>
+    </div>
+
+    <div class="slider">
+        <div class="slides">
+            <img src="image1.png" alt="Slide 1">
+            <img src="image2.png" alt="Slide 2">
+            <img src="image3.png" alt="Slide 3">
+            <img src="image4.png" alt="Slide 4">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+
+    <div class="container">
+    <h1>School Timetable Generator</h1>
+
+    
+    <div class="form-group">
+        <label for="program">Program Name:</label>
+        <input type="text" id="program">
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject">
+      </div>
+      <div class="form-group">
+        <label for="time">Time:</label>
+        <input type="time" id="time">
+      </div>
+      <div class="form-group">
+        <label for="day">Day:</label>
+        <select id="day">
+          <option value="monday">Monday</option>
+          <option value="tuesday">Tuesday</option>
+          <option value="wednesday">Wednesday</option>
+          <option value="thursday">Thursday</option>
+          <option value="friday">Friday</option>
+          <option value="saturday">Saturday</option>
+          <option value="sunday">Sunday</option>
+        </select>
+      </div>
+      <button onclick="addSubject()">Add Subject</button>
+    </div>
+    
+    <div class="timetable">
+      <h2 id="programName"> Program:</h2>
+      <table border="1">
+        <tr>
+          <th></th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+          <th>Sunday</th>
+        </tr>
+        <tr>
+          <th>05:00 - 07:00</th>
+          <td id="monday-05:00"></td>
+          <td id="tuesday-05:00"></td>
+          <td id="wednesday-05:00"></td>
+          <td id="thursday-05:00"></td>
+          <td id="friday-05:00"></td>
+          <td id="saturday-05:00"></td>
+          <td id="sunday-05:00"></td>
+        </tr>
+        <tr>
+            <th>07:00 - 09:00 PM</th>
+            <td id="monday-07:00"></td>
+            <td id="tuesday-07:00"></td>
+            <td id="wednesday-07:00"></td>
+            <td id="thursday-07:00"></td>
+            <td id="friday-07:00"></td>
+            <td id="saturday-07:00"></td>
+            <td id="sunday-07:00"></td>
+          </tr>
+        <!-- Add rows for other times bbb -->
+      </table>
+    </div>
+
+</main>
+
+    <script src="script.js"></script>
+</body>
+</html>
